@@ -9,7 +9,7 @@ const pluto = () => {
 		DistanceFromSun: "3.67 billion mi";
 		AtmosphereComposition: " Nitrogen and other complex molecules such as methane"
 		Satellites: "Charon and Hydra";
-		orbiters: "New Horizons";
+		Orbiters: "New Horizons";
 		}];
 	console.log("pluto", pluto);
 }
