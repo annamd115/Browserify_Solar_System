@@ -9,7 +9,7 @@ const neptune = () => {
 		DistanceFromSun: "2.795 billion mi";
 		AtmosphereComposition: "Hydrogen, Helium, and Methane";
 		Satellites: "Triton, Nereid, and Proteus";
-		Orbiters:
+		Orbiters: "N/A"
 		}];
 	console.log("neptune", neptune);
 }
