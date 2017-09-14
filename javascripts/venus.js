@@ -2,7 +2,7 @@
 
 const venus = () => {
 	const Details = [{
-		Name:
+		Name: ""
 		YearDiscovered:
 		Mass:
 		Size:
