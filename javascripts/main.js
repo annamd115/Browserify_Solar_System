@@ -1,7 +1,5 @@
 "use strict";
 
-const solarSystem = require("./solarSystem");
+const SolarSystem = require("./domHandler");
 
-const handler = require("./domHandler");
-
-console.log("handler", handler);
+document.getElementById("outputEl").innerHTML = SolarSystem;

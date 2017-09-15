@@ -13,8 +13,7 @@ const venus = () => {
 		}];
 	console.log("venus", venus);
 	return Details;
-
-}
+};
 		
 module.export = venus;
 console.log("I'm on Venus");

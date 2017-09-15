@@ -1,3 +1,4 @@
+"use strict";
 console.log("I'm in solarSystem.js");
 
 const earth = require("./earth");
@@ -10,7 +11,7 @@ const uranus = require("./uranus");
 const saturn = require("./saturn");
 const pluto = require("./pluto");
 
-const solarSystem = {
+let solarSystem = {
 	mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto
 };
 

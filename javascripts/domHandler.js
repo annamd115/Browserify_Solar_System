@@ -1,41 +1,38 @@
 "use strict";
 
-let solarSystem = getElementById('outputEl');
+let outputEl = document.getElementById('outputEl');
+let planetString = ``;
+const SolarSystem = require("./solarSystem");
 
-const solarSystem = require("./solarSystem");
+let mercury = SolarSystem.mercury();
+let venus = SolarSystem.venus();
+let earth = SolarSystem.earth();
+let mars = SolarSystem.mars();
+let jupiter = SolarSystem.jupiter();
+let saturn = SolarSystem.saturn();
+let uranus = SolarSystem.uranus();
+let neptune = SolarSystem.neptune();
+let pluto = SolarSystem.pluto();
 
-const earth = solarSystem.earth;
-const mercury = solarSystem.mercury;
-const venus = solarSystem.venus;
-const mars = solarSystem.mars;
-const jupiter = solarSystem.jupiter;
-const saturn = solarSystem.saturn;
-const uranus = solarSystem.uranus;
-const neptune = solarSystem.neptune;
-const pluto = solarSystem.pluto;
+let systemArray = earth.concat(mercury, venus, mars, jupiter, saturn, uranus, neptune, pluto);
 
-const systemArray = earth.concat(mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto);
+let printPlanets = (planet) =>{
+for(var i = 0; i < planet.length; i++){
+		planetString += `<div>
+							<h2>${planet[i].Name}</h2>
+							<h4>${planet[i].YearDiscovered}</h4>
+							<h4>${planet[i].Mass}</h4>
+							<h4>${planet[i].Size}</h4>
+							<h4>${planet[i].DistanceFromSun}</h4>
+							<h4>${planet[i].AtmosphereComposition}</h4>
+							<h4>${planet[i].Satellites}</h4>
+							<h4>${planet[i].Orbiters}</h4>
+						</div>`;
+		}
+};
 
-
-
-// let domString = (solarSystem) =>{
-// for(i = 0; i < solarSystem.length; i++){
-// 	let planetString = "";
-// 		planetString += `<div class="allPlanets">`;
-// 		planetString += `<h2>${planet.Name[i]}</h2>`;
-// 		planetString += `<h4>${planet.YearDiscovered[i]}</h4>`;
-// 		planetString += `<h4>${planet.Mass[i]}</h4>`;
-// 		planetString += `<h4>${planet.Size[i]}</h4>`;
-// 		planetString += `<h4>${planet.DistanceFromSun[i]}</h4>`;
-// 		planetString += `<h4>${planet.AtmosphereComposition[i]}</h4>`;
-// 		planetString += `<h4>${planet.Satellites[i]}</h4>`;
-// 		planetString += `<h4>${planet.Orbiters[i]}</h4>`;
-// 		planetString += `</div>`;
-// 	}
-// 	return planetString;
-// };
-
-module.exports = systemArray; //will end up return planetString
+printPlanets(systemArray);
+module.exports = planetString; //will end up return planetString
 
 
 
