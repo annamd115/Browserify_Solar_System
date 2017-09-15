@@ -12,6 +12,7 @@ const jupiter = () => {
 		Orbiters: "Galileo"
 		}];
 	console.log("jupiter", jupiter);
+	return Details;
 }
 		
 module.export = jupiter()

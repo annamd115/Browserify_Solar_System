@@ -12,6 +12,7 @@ const Details = [{
 		Orbiters: "N/A"
 	}];
 	console.log("earth", earth);
+	return Details;
 }
 		
 module.export = earth()

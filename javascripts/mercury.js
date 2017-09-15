@@ -12,6 +12,8 @@ const mercury = () => {
 		Orbiters: "Mercury Planetary Orbiter (MPO) and the Mercury Magnetospheric Orbiter"
 		}];
 	console.log("mercury", mercury);
+	return Details;
+
 }
 		
 module.export = mercury()

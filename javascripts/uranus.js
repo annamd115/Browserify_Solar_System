@@ -12,6 +12,8 @@ const uranus = () => {
 		orbiters: "N/A"
 		}];
 	console.log("uranus", uranus);
+	return Details;
+
 }
 		
 module.export = uranus()

@@ -12,6 +12,7 @@ const pluto = () => {
 		Orbiters: "New Horizons";
 		}];
 	console.log("pluto", pluto);
+	return Details;
 }
 		
 module.export = pluto()

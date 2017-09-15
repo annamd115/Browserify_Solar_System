@@ -12,6 +12,8 @@ const saturn = () => {
 		Orbiters: "Titan Probe (SOTP)"
 		}];
 	console.log("saturn", saturn);
+	return Details;
+
 }
 		
 module.export = saturn()

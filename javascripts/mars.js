@@ -12,6 +12,8 @@ const mars = () => {
 		Orbiters: "Mars 2, Mars 3, Mariner 9"
 		}];
 	console.log("mars", mars);
+	return Details;
+
 }
 		
 module.export = mars()
